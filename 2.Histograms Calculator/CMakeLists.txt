@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( histograms_calc )
+find_package( OpenCV REQUIRED )
+add_executable( histograms_calc histograms_calc.cpp )
+target_link_libraries( histograms_calc ${OpenCV_LIBS} )

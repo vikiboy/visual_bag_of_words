@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( SVM_training )
+find_package( OpenCV REQUIRED )
+add_executable( SVM_training SVM_training.cpp )
+target_link_libraries( SVM_training ${OpenCV_LIBS} )

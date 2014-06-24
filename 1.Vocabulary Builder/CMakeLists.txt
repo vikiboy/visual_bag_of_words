@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( vocabulary_builder )
+find_package( OpenCV REQUIRED )
+add_executable( vocabulary_builder vocabulary_builder.cpp )
+target_link_libraries( vocabulary_builder ${OpenCV_LIBS} )
